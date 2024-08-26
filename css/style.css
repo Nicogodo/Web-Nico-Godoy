@@ -1,0 +1,721 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*! -------RESET--------*/
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/*?---------BOOTSTRAP-------------*/
+
+/** -----------HEADER----------- */
+
+.navbar-collapse {
+    flex-grow: 0
+}
+
+.navbar-nav {
+    padding-right: 20px;
+}
+
+.nav-item {
+    padding-right: 110px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #0caa95;
+}
+
+.navbar .navbar-nav .nav-link {
+    transition: all .5s;
+}
+
+/*?----------- CSS ---------------*/
+
+/** -----------HERO------------- */
+.hero {
+
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    padding: 131px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.hero h1 {
+    width: 800px;
+    height: 233px;
+    text-align: right;
+    font-weight: 800;
+    font-size: 80px;
+    text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.548);
+    line-height: 70px;
+    color: white;
+}
+
+
+.whatsapp a img {
+    width: 60px;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+}
+
+
+/** -----------CARDS------------ */
+
+.background_cards h2 {
+    margin-bottom: 0;
+    text-align: center;
+    background-color: black;
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+    padding: 50px;
+}
+
+.background_cards h2 span {
+    font-weight: 200;
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+
+.cards {
+    width: 100%;
+    background-color: black;
+    padding: 0px 0px 80px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cards div {
+    width: 296px;
+    height: 414px;
+    position: relative;
+    margin: 20px;
+}
+
+.cards div a img {
+    width: 100%;
+
+}
+
+.cards div h3 {
+    position: absolute;
+    bottom: 0;
+    font-weight: 300;
+    font-size: 19px;
+    letter-spacing: 3px;
+    padding: 0px 0px 16px 0px;
+    color: white;
+}
+
+
+.text_bio {
+    left: 44%;
+}
+
+.text_blog {
+    left: 41%;
+}
+
+.text_portafolio {
+    left: 28%;
+}
+
+.text_contactame {
+    left: 25%;
+}
+
+
+
+/** -----------YO--------------- */
+
+.yo {
+    width: 100%;
+    height: 720px;
+    background-image: url(../img/fondo-cargo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding: 124px;
+    color: white;
+}
+
+.yo h2 {
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 70px;
+    text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.548);
+    display: inline-block;
+    padding: 20px 20px 10px 20px;
+}
+
+.yo p {
+    width: 410px;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.692);
+    padding: 10px 20px 20px 20px;
+}
+
+
+/**----------- SKILLS----------- */
+
+.skills {
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px 250px 100px 100px;
+    gap: 10px;
+    grid-template-areas:
+        "vision vision liderazgo"
+        "pensamiento story liderazgo"
+        "pensamiento multicanal inteligencia"
+        "pensamiento multicanal inteligencia"
+    ;
+}
+
+.skills div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    font-size: 20px;
+    color: white;
+}
+
+.vision_estrategica {
+    grid-area: vision;
+    position: relative;
+}
+
+.vision_estrategica h3 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-shadow: 1px 1px 10px rgb(0, 0, 0);
+
+}
+
+.liderazgo_inspirador {
+    grid-area: liderazgo;
+    position: relative;
+}
+
+.liderazgo_inspirador h3 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+
+.pensamiento_disruptivo {
+    grid-area: pensamiento;
+    position: relative;
+}
+
+.pensamiento_disruptivo h3 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+
+.storytelling_poderoso {
+    grid-area: story;
+    position: relative;
+}
+
+.storytelling_poderoso h3 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+
+.conocimiento_multicanal {
+    grid-area: multicanal;
+    position: relative;
+}
+
+.conocimiento_multicanal h3 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+
+.inteligencia_emocional {
+    grid-area: inteligencia;
+    position: relative;
+}
+
+.inteligencia_emocional h3 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+
+/** -----------FOOTER----------- */
+
+footer {
+    width: 100%;
+    height: 464px;
+    line-height: 70px;
+    background-image: url(../img/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+footer h2 {
+    font-size: 48px;
+    font-weight: 300;
+
+}
+
+footer div a img {
+    margin: 20px;
+
+}
+
+/*!--------PAGE BIO------------- */
+
+.biografia{
+    width: 100%;
+    background-color: black;
+    /* border: solid 1px yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.biografia div{
+    width: 600px;
+}
+.biografia div h1{
+    font-size: 80px;
+    font-weight: 800;
+    color: #0caa95;
+    line-height: 70px;
+    display: inline-block;
+    padding: 20px 20px 0px 20px;
+}
+
+.biografia div h1 span{
+    font-weight: 100;
+    color: white;
+}
+
+.biografia div h2{
+    font-size: 40px;
+    font-weight: 200;
+    line-height: normal;
+    padding: 10px 5px 5px 20px;
+}
+
+.biografia div p span{
+    font-weight: 800;
+    color: #0caa95;
+    font-style: italic;
+} 
+
+.biografia div p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: justify;
+    padding: 2px 20px 20px 20px;
+} 
+
+
+.biografia img{
+    /* border: solid 1px yellow; */
+    width: 400px;
+}
+
+.btn-primary{
+    color: rgb(255, 254, 254);
+    background-color:rgb(12, 170, 149);
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 20px;
+    
+} 
+
+.btn-primary:hover{
+    color: white;
+    background-color: black;
+    border: solid 2px white;
+    font-weight: 800;
+} 
+
+/*!--------PAGE CONTACTAME------------- */
+
+.formulario{
+    width: 100%;
+    height: 600px;
+    font-size: 20px;
+    color: #0caa95;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.formulario h1{
+    width: 50%;
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+} 
+
+.formulario div{
+    width: 50%;
+    text-align: center;
+} 
+
+/**----------- MEDIA QUERIES------------ */
+
+@media screen and (max-width: 1212px) {
+    .hero {
+        padding: 100px;
+    }
+
+    .hero h1 {
+        width: 700px;
+        height: 433px;
+        font-size: 80px;
+        line-height: 70px;
+    }
+}
+
+@media screen and (max-width:1030px) {
+    .biografia div{
+        width: 400px;
+    }
+    .biografia div h1{
+        font-size: 60px;
+        padding: 20px 20px 0px 20px;
+    }
+    .biografia div h2{
+        font-size: 32px;
+        padding: 0px 5px 5px 20px;
+    } 
+}
+
+@media screen and (max-width:840px) {
+
+    .hero {
+        padding: 40px;
+    }
+
+    .hero h1 {
+        width: 450px;
+        height: 433px;
+        font-size: 70px;
+        line-height: 60px;
+    }
+
+    .yo {
+        background-position: left;
+        padding: 40px;
+    }
+
+    .yo p {
+        width: 310px;
+        font-size: 16px;
+    }
+
+    .vision_estrategica h3 {
+        font-weight: 600;
+        font-size: 30px;
+        text-align: center;
+    }
+
+
+    .liderazgo_inspirador h3 {
+        font-weight: 600;
+        font-size: 30px;
+    }
+
+    .pensamiento_disruptivo h3 {
+        font-weight: 600;
+        font-size: 30px;
+    }
+
+    .storytelling_poderoso h3 {
+        font-weight: 600;
+        font-size: 30px;
+    }
+
+    .conocimiento_multicanal h3 {
+        font-weight: 600;
+        font-size: 30px;
+    }
+
+    .inteligencia_emocional h3 {
+        font-weight: 600;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:790px) {
+    .biografia img{
+        display: none;
+    } 
+}
+
+@media screen and (max-width:766px) {
+    .hero {
+        padding: 40px;
+    }
+
+    .hero h1 {
+        width: auto;
+        height: 200px;
+        font-size: 70px;
+        line-height: 60px;
+    }
+    .biografia img{
+        display: none;
+    } 
+}
+
+@media screen and (max-width: 654px) {
+    .vision_estrategica h3 {
+        font-weight: 500;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .liderazgo_inspirador h3 {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .pensamiento_disruptivo h3 {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .storytelling_poderoso h3 {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .conocimiento_multicanal h3 {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .inteligencia_emocional h3 {
+        font-weight: 500;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 604px) {
+    .hero {
+        height: calc(100vh - 112px);
+    }
+
+    .hero h1 {
+        font-size: 60px;
+        line-height: 50px;
+    }
+
+    .yo {
+        background-image: url(../img/fondo-cargo-responsive.png);
+        background-position: right;
+        justify-content: center;
+        align-items: left;
+        color: white;
+    }
+
+    .yo p {
+        width: 340px;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+        text-align: left;
+        padding: 10px 20px 20px 20px;
+    }
+
+    .whatsapp a img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 592px) {
+    .background_cards h2 {
+        text-align: center;
+        background-color: black;
+        font-size: 30px;
+        font-weight: 800;
+        color: white;
+        padding: 50px;
+    }
+
+    .background_cards h2 span {
+        font-weight: 200;
+        font-size: 25px;
+        letter-spacing: 3px;
+    }
+}
+
+@media screen and (max-width: 508px) {
+
+    .skills {
+        width: 100%;
+        background-color: black;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+        gap: 10px;
+        grid-template-areas:
+            "vision vision"
+            "liderazgo liderazgo"
+            "pensamiento pensamiento"
+            "multicanal multicanal"
+            "inteligencia inteligencia"
+            "story story"
+        ;
+    }
+
+    footer {
+        background-image: url(../img/footer-responsive.jpg);
+    }
+
+    footer h2 {
+        font-size: 38px;
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .hero {
+        padding: 3px;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        text-align: center;
+        width: 250px;
+        height: 433px;
+        font-size: 45px;
+        line-height: 40px;
+    }
+
+    .yo {
+        justify-content: center;
+        align-items: left;
+        color: white;
+    }
+
+    .yo h2 {
+        width: 250px;
+        padding: 0;
+        font-size: 60px;
+        font-weight: 800px;
+        line-height: 50px;
+        text-align: left;
+    }
+
+    .yo p {
+        width: 250px;
+        padding: 10px 20px 0px 0px;
+        text-align: left;
+    }
+
+    footer h2 {
+        font-size: 28px;
+        font-weight: 300;
+    }
+
+    .biografia div{
+        width: 400px;
+    }
+    .biografia div h1{
+        font-size: 40px;
+        padding: 20px 20px 0px 20px;
+    }
+    .biografia div h2{
+        font-size: 22px;
+        padding: 0px 5px 5px 20px;
+    } 
+    .biografia div p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: normal;
+        text-align: justify;
+        padding: 2px 20px 20px 20px;
+    } 
+    .biografia div p span{
+        font-weight: 400;
+        color: rgb(199, 169, 0);
+        font-style: italic;
+    }
+} 
