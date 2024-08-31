@@ -393,7 +393,7 @@ footer div a img {
 
 .btn-primary{
     color: rgb(255, 254, 254);
-    background-color:rgb(12, 170, 149);
+    background-color:#0caa95;
     border: none;
     font-size: 20px;
     font-weight: 400;
@@ -411,30 +411,243 @@ footer div a img {
 /*!--------PAGE CONTACTAME------------- */
 
 .formulario{
-    width: 100%;
-    height: 600px;
-    font-size: 20px;
-    color: #0caa95;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    height: 100vh;
 }
 
-.formulario h1{
-    width: 50%;
-    font-size: 60px;
-    font-weight: 800;
-    text-align: center;
-    color: white;
-} 
+section .contenedor_formulario{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 70%;
+    margin: 30px;
+    background-color: #000000;
+}
 
-.formulario div{
+section div.seccion_texto{
     width: 50%;
+    text-align: left;
+}
+
+section div .seccion_texto h1 {
+    font-size: 2.5em;
+    color: #ffffff;
+    text-align: left;
+}
+
+section div .seccion_texto p {
+    font-size: 1.2em;
+    color: #ffffff;
+    line-height: 1.5;
+    text-align: left;
+}
+
+section div .seccion_formulario {
+    width: 500px;
+}
+
+section div .seccion_formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+section div .seccion_formulario form label {
+    width: 100%;
+    font-size: 1em;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+section div .seccion_formulario form input[type="text"],
+section div .seccion_formulario form input[type="email"],
+section div .seccion_formulario form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #0caa95;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+section div .seccion_formulario form input{
+    width: 100%;
+    padding: 10px;
+}
+
+section div div .campos_nombre {
+    display: flex;
+    justify-content: space-between;
+}
+
+section div div div .nombre_completo{
+    padding: 0 10px 0 0;
+}
+section div .seccion_formulario form textarea {
+    height: 150px;
+    resize: none;
+}
+
+section div .seccion_formulario form button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section div .seccion_formulario form button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+section div .seccion_formulario form button:after {
+    content: '➔';
+    font-size: 1.2em;
+    margin-left: 10px;
+    transition: margin-left 0.3s;
+}
+
+section div .seccion_formulario form button:hover:after {
+    margin-left: 20px;
+}
+
+/*!-------- PAGE BLOG ------------- */
+section .titulo_blog{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    font-size: 3.5em;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-} 
+    margin: 0;
+    color: #ffffff;
+}
+
+section .contenedor{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 20px 0 20px;
+}
+section div .tarjeta{
+    background-color: #fff;
+    border: 1px solid rgb(12, 170, 149);
+    border-radius: 5px;
+    width: 430px;
+    margin: 20px;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+section div .tarjeta img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+section div .contenido_tarjeta{
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+section div.tarjeta h2 {
+    font-size: 1.5em;
+    font-weight: 800;
+    margin: 0 0 10px;
+}
+section div .tarjeta p {
+    font-size: 1em;
+    color: #000000;
+    flex-grow: 1;
+}
+section div .tarjeta button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(12, 170, 149);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+}
+section div .tarjeta button:hover {
+    background-color: #0c0c0c;
+}
+
+/*!--------PAGE PORTAFOLIO------------- */
+
+section div h1{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    color: white;
+    font-size: 3.5em;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+section .proyectos{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+}
+section div .contenedor_proyectos{
+    width: 400px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    color: white; 
+}
+section div .contenedor_proyectos img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px; 
+}
+section div .contenedor_proyectos h3{
+    margin: 0 0 10px 0; 
+    font-size: 2,5em;
+    font-weight: 800;
+    color: rgb(12, 170, 149); 
+}
+section div .contenedor_proyectos p {
+    font-size: 1em;
+    color: #ffffff;
+    text-align: center;
+}
+
+
 
 /**----------- MEDIA QUERIES------------ */
 
@@ -719,3 +932,12 @@ footer div a img {
         font-style: italic;
     }
 } 
+
+@media screen and (max-width: 340px) {
+    .navbar-brand img{
+        width: 150px;
+    }
+    section .titulo_blog{
+        font-size: 2.5em;
+    } 
+}
