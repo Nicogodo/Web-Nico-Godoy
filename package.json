@@ -1,0 +1,21 @@
+{
+  "name": "proyecto-coder-web-nico",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hi 👋, I'm Nico Godoy</h1> <h3 align=\"center\">I’m currently designing my personal website as part of the Web Development course at Coderhouse. This project is an opportunity to apply everything I’ve learned about HTML, CSS, and JavaScript, while showcasing my creative style with a functional approach. The goal is to create a space that reflects both my experience in advertising and my skills in UX/UI and development, blending aesthetics and technology into a platform that speaks for itself.</h3>",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.1.4"
+  }
+}

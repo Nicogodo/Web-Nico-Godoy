@@ -1,0 +1,325 @@
+
+@media screen and (max-width: 1212px) {
+    .hero {
+        padding: 100px;
+    }
+
+    .hero h1 {
+        width: 700px;
+        height: 433px;
+        font-size: 80px;
+        line-height: 70px;
+    }
+}
+
+@media screen and (max-width:1030px) {
+    .biografia div{
+        width: 400px;
+    }
+    .biografia div h1{
+        font-size: 60px;
+        padding: 20px 20px 0px 20px;
+    }
+    .biografia div h2{
+        font-size: 32px;
+        padding: 0px 5px 5px 20px;
+    } 
+
+    section .contenedor_formulario {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        width: 100%;
+    }
+
+    section div.seccion_texto h1 {
+        font-size: 2em;
+    }
+
+    section div.seccion_formulario {
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width:840px) {
+
+    .hero {
+        padding: 40px;
+    }
+
+    .hero h1 {
+        width: 450px;
+        height: 433px;
+        font-size: 70px;
+        line-height: 60px;
+    }
+
+    .yo {
+        background-position: left;
+        padding: 40px;
+    }
+
+    .yo p {
+        width: 310px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:790px) {
+    .biografia img{
+        display: none;
+    } 
+}
+
+@media screen and (max-width:766px) {
+    .hero {
+        padding: 40px;
+    }
+
+    .hero h1 {
+        width: auto;
+        height: 200px;
+        font-size: 70px;
+        line-height: 60px;
+    }
+    .biografia img{
+        display: none;
+    } 
+    section .contenedor_formulario {
+        margin: 20px;
+        width: 100%;
+    }
+
+    section div.seccion_texto h1 {
+        font-size: 2em;
+    }
+
+    section div.seccion_formulario {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 654px) {
+
+    .skills .vision_estrategica h3,
+    .skills .liderazgo_inspirador h3,
+    .skills .pensamiento_disruptivo h3,
+    .skills .storytelling_poderoso h3,
+    .skills .conocimiento_multicanal h3,
+    .skills .inteligencia_emocional h3{
+        font-weight: 500;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 604px) {
+    .hero {
+        height: calc(100vh - 112px);
+    }
+
+    .hero h1 {
+        font-size: 60px;
+        line-height: 50px;
+    }
+
+    .yo {
+        background-image: url(../img/fondo-cargo-responsive.png);
+        background-position: right;
+        justify-content: center;
+        align-items: left;
+        color: white;
+    }
+
+    .yo p {
+        width: 340px;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: normal;
+        text-align: left;
+        padding: 10px 20px 20px 20px;
+    }
+
+    .whatsapp a img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 592px) {
+    .background_cards h2 {
+        text-align: center;
+        background-color: black;
+        font-size: 30px;
+        font-weight: 800;
+        color: white;
+        padding: 50px;
+    }
+
+    .background_cards h2 span {
+        font-weight: 200;
+        font-size: 25px;
+        letter-spacing: 3px;
+    }
+
+    section .contenedor_formulario {
+        div {
+            &.seccion_formulario {
+                form {
+
+                    label {
+                        display: block; 
+                        width: 100%; 
+                        text-align: center; 
+                        margin-bottom: 10px; 
+                    }
+
+                    input[type="text"],
+                    input[type="email"],
+                    textarea {
+                        width: 100%; 
+                        text-align: center; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 508px) {
+
+    .skills {
+        width: 100%;
+        background-color: black;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+        gap: 10px;
+        grid-template-areas:
+            "vision vision"
+            "liderazgo liderazgo"
+            "pensamiento pensamiento"
+            "multicanal multicanal"
+            "inteligencia inteligencia"
+            "story story"
+        ;
+    }
+    
+    section .contenedor_formulario {
+        div {
+            &.seccion_texto {
+                width: 350px; 
+                text-align: center; 
+                margin-bottom: 10px; 
+            }
+        }
+
+        div {
+            &.seccion_formulario {
+                width: 350px; 
+                text-align: center; 
+                margin: 0 auto; /* Centra el formulario dentro de su contenedor */
+        
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center; /* Alinea los elementos hijos horizontalmente al centro */
+        
+                    label {
+                        width: 90%; 
+                        text-align: center; 
+                        margin-bottom: 10px; 
+                    }
+        
+                    input[type="text"],
+                    input[type="email"],
+                    textarea {
+                        width: 90%; 
+                        text-align: center; 
+                        margin-bottom: 15px; /* Añade un margen inferior para separar los campos */
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        background-image: url(../img/footer-responsive.jpg);
+    }
+
+    footer h2 {
+        font-size: 38px;
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .hero {
+        padding: 3px;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        text-align: center;
+        width: 250px;
+        height: 433px;
+        font-size: 45px;
+        line-height: 40px;
+    }
+
+    .yo {
+        justify-content: center;
+        align-items: left;
+        color: white;
+    }
+
+    .yo h2 {
+        width: 250px;
+        padding: 0;
+        font-size: 60px;
+        font-weight: 800px;
+        line-height: 50px;
+        text-align: left;
+    }
+
+    .yo p {
+        width: 250px;
+        padding: 10px 20px 0px 0px;
+        text-align: left;
+    }
+
+    footer h2 {
+        font-size: 28px;
+        font-weight: 300;
+    }
+
+    .biografia div{
+        width: 400px;
+    }
+    .biografia div h1{
+        font-size: 40px;
+    }
+    .biografia div h2{
+        font-size: 22px;
+        padding: 0px 5px 5px 20px;
+    } 
+} 
+
+@media screen and (max-width: 340px) {
+    .navbar-brand img{
+        width: 150px;
+    }
+
+    section div h1{
+        font-size: 3em;
+        height: 80px;
+    }
+    section .proyectos .contenedor_proyectos h2{
+        font-size: 1.8em;
+    }
+
+    section .titulo_blog{
+        font-size: 2.5em;
+    } 
+}

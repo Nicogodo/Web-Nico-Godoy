@@ -1,0 +1,52 @@
+.biografia {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    img {
+        width: 400px;
+    }
+
+    div {
+        width: 600px;
+
+        h1 {
+            font-size: 80px;
+            font-weight: 800;
+            color: #0caa95;
+            line-height: 70px;
+            display: inline-block;
+            padding: 20px 20px 0px 20px;
+
+            span {
+                font-weight: 100;
+                color: white;
+            }
+        }
+
+        h2 {
+            font-size: 40px;
+            font-weight: 200;
+            line-height: normal;
+            padding: 10px 5px 5px 20px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: normal;
+            text-align: justify;
+            padding: 2px 20px 20px 20px;
+
+            span {
+                font-weight: 800;
+                color: #0caa95;
+                font-style: italic;
+            }
+        }
+    }
+
+}

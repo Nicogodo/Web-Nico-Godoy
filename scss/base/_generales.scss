@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*! -------RESET--------*/
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/*?---------BOOTSTRAP-------------*/
+
+/** -----------HEADER----------- */
+
+.navbar-collapse {
+    flex-grow: 0
+}
+
+.navbar-nav {
+    padding-right: 20px;
+}
+
+.nav-item {
+    padding-right: 110px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #0caa95;
+}
+
+.navbar .navbar-nav .nav-link {
+    transition: all .5s;
+}
+
+/** -----------BOTON----------- */
+.btn-primary{
+    color: rgb(255, 254, 254);
+    background-color:#0caa95;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 20px;
+    
+} 
+
+.btn-primary:hover{
+    color: white;
+    background-color: black;
+    border: solid 2px white;
+    font-weight: 800;
+} 
+
+/** -----------CSS CONDICIONES----------- */
+
+/** -----------CARDS----------- */
+.text_bio {
+    left: 44%;
+}
+.text_blog {
+    left: 41%;
+}
+.text_portafolio {
+    left: 28%;
+}
+.text_contactame {
+    left: 25%;
+}
+
+/** -----------WHATSAPP BOTON----------- */
+.whatsapp a img {
+    width: 60px;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+}
+
+
+/** -----------FORMULARIO----------- */
+.formulario {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
