@@ -1,10 +1,10 @@
 .biografia {
     width: 100%;
-    background-color: black;
+    background-color: $color_primary;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: $color_secundary;
 
     img {
         width: 400px;
@@ -14,36 +14,36 @@
         width: 600px;
 
         h1 {
-            font-size: 80px;
-            font-weight: 800;
-            color: #0caa95;
+            font-size: $font_size_extra_large;
+            font-weight: $font_weight_bold;
+            color: $color_terciary;
             line-height: 70px;
             display: inline-block;
             padding: 20px 20px 0px 20px;
 
             span {
                 font-weight: 100;
-                color: white;
+                color: $color_secundary;
             }
         }
 
         h2 {
-            font-size: 40px;
-            font-weight: 200;
+            font-size: $font_size_medium;
+            font-weight: $font_weight_light;
             line-height: normal;
             padding: 10px 5px 5px 20px;
         }
 
         p {
-            font-size: 16px;
-            font-weight: 400;
+            font-size: $font_size_small;
+            font-weight: $font_weight_normal;
             line-height: normal;
             text-align: justify;
             padding: 2px 20px 20px 20px;
 
             span {
-                font-weight: 800;
-                color: #0caa95;
+                font-weight: $font_weight_bold;
+                color: $color_terciary;
                 font-style: italic;
             }
         }

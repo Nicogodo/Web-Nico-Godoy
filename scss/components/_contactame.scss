@@ -5,7 +5,7 @@ section {
         align-items: center;
         width: 70%;
         margin: 30px;
-        background-color: #000000;
+        background-color: $color_primary;
 
         div {
             &.seccion_texto {
@@ -18,13 +18,13 @@ section {
 
                 h1 {
                     font-size: 3em;
-                    font-weight: 800;
-                    color: #ffffff;
+                    font-weight: $font_weight_bold;
+                    color: $color_secundary;
                 }
 
                 p {
-                    font-size: 1.2em;
-                    color: #ffffff;
+                    font-size: $font_size_small;
+                    color: $color_secundary;
                     line-height: 1.5;
                 }
             }
@@ -38,8 +38,8 @@ section {
 
                     label {
                         width: 100%;
-                        font-size: 1em;
-                        color: #ffffff;
+                        font-size: $font_size_small;
+                        color: $color_secundary;
                         margin-bottom: 5px;
                     }
 
@@ -48,9 +48,9 @@ section {
                     textarea {
                         padding: 10px;
                         margin-bottom: 20px;
-                        border: 1px solid #0caa95;
+                        border: 1px solid $color_terciary;
                         border-radius: 5px;
-                        font-size: 1em;
+                        font-size: $font_size_small;
                         box-sizing: border-box;
                     }
 
@@ -67,9 +67,9 @@ section {
                     button {
                         padding: 10px 20px;
                         background-color: transparent;
-                        border: 2px solid #ffffff;
+                        border: 2px solid $color_secundary;
                         border-radius: 5px;
-                        font-size: 1em;
+                        font-size: $font_size_small;
                         color: white;
                         cursor: pointer;
                         align-self: flex-start;
@@ -78,19 +78,20 @@ section {
                         justify-content: center;
 
                         &:hover {
-                            background-color: #333;
-                            color: #fff;
+                            background-color: $color_terciary;
+                            color: $color_secundary;
                         }
 
                         &:after {
                             content: '➔';
                             font-size: 1.2em;
                             margin-left: 10px;
-                            transition: margin-left 0.3s;
+                            transition: margin-left 0.8s;
                         }
 
                         &:hover:after {
                             margin-left: 20px;
+
                         }
                     }
                 }

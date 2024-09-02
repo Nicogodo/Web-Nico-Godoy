@@ -7,7 +7,6 @@
     .hero h1 {
         width: 700px;
         height: 433px;
-        font-size: 80px;
         line-height: 70px;
     }
 }
@@ -17,11 +16,11 @@
         width: 400px;
     }
     .biografia div h1{
-        font-size: 60px;
+        font-size: $font_size_large;
         padding: 20px 20px 0px 20px;
     }
     .biografia div h2{
-        font-size: 32px;
+        font-size: 2em;
         padding: 0px 5px 5px 20px;
     } 
 
@@ -62,8 +61,7 @@
     }
 
     .yo p {
-        width: 310px;
-        font-size: 16px;
+        width: 450px;
     }
 }
 
@@ -129,15 +127,10 @@
         background-position: right;
         justify-content: center;
         align-items: left;
-        color: white;
     }
 
     .yo p {
         width: 340px;
-        font-size: 16px;
-        font-style: italic;
-        font-weight: 400;
-        line-height: normal;
         text-align: left;
         padding: 10px 20px 20px 20px;
     }
@@ -149,18 +142,11 @@
 
 @media screen and (max-width: 592px) {
     .background_cards h2 {
-        text-align: center;
-        background-color: black;
         font-size: 30px;
-        font-weight: 800;
-        color: white;
-        padding: 50px;
     }
 
     .background_cards h2 span {
-        font-weight: 200;
         font-size: 25px;
-        letter-spacing: 3px;
     }
 
     section .contenedor_formulario {
@@ -191,7 +177,7 @@
 
     .skills {
         width: 100%;
-        background-color: black;
+        background-color: $color_primary;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 200px;
@@ -219,12 +205,12 @@
             &.seccion_formulario {
                 width: 350px; 
                 text-align: center; 
-                margin: 0 auto; /* Centra el formulario dentro de su contenedor */
+                margin: 0 auto; 
         
                 form {
                     display: flex;
                     flex-direction: column;
-                    align-items: center; /* Alinea los elementos hijos horizontalmente al centro */
+                    align-items: center; 
         
                     label {
                         width: 90%; 
@@ -237,7 +223,7 @@
                     textarea {
                         width: 90%; 
                         text-align: center; 
-                        margin-bottom: 15px; /* Añade un margen inferior para separar los campos */
+                        margin-bottom: 15px; 
                     }
                 }
             }
@@ -251,6 +237,23 @@
     footer h2 {
         font-size: 38px;
         font-weight: 300;
+    }
+
+    section .contenedor .tarjeta{
+        height: 500px;
+    }
+
+    section .contenedor .tarjeta .contenido_tarjeta h2{
+        font-size: $font_size_small;
+    }
+
+    section .contenedor .tarjeta .contenido_tarjeta p{
+        font-size: 10px;
+    }
+
+    section .contenedor .tarjeta .contenido_tarjeta button{
+        width: 100%;
+        font-size: 12px;
     }
 }
 
@@ -271,14 +274,13 @@
     .yo {
         justify-content: center;
         align-items: left;
-        color: white;
+        color: $color_secundary;
     }
 
     .yo h2 {
         width: 250px;
         padding: 0;
-        font-size: 60px;
-        font-weight: 800px;
+        font-size: $font_size_large;
         line-height: 50px;
         text-align: left;
     }
@@ -320,6 +322,6 @@
     }
 
     section .titulo_blog{
-        font-size: 2.5em;
+        font-size: $font_size_medium;
     } 
 }

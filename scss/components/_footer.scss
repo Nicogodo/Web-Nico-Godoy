@@ -10,17 +10,20 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: $color_secundary;
 
 }
 
 footer h2 {
-    font-size: 48px;
+    font-size: $font_size_medium;
     font-weight: 300;
 
 }
 
 footer div a img {
     margin: 20px;
-
+    transition: transform 0.5s ease; 
+        &:hover {
+            transform: scale(1.5) rotate(360deg);
+        }     
 }
