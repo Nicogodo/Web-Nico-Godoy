@@ -7,9 +7,7 @@ section {
             color: $color_secundary;
             font-size: $font_size_large;
             font-weight: $font_weight_bold;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex(flex, center, center);
             margin: 0;
         }
     }
@@ -61,12 +59,11 @@ section {
             margin: 0 0 10px 0;
             font-size: $font_size_medium;
             font-weight: $font_weight_bold;
-            color: $color_terciary;
+            color: $color_accent;
         }
 
         p {
-            font-size: $font_size_small;
-            color: $color_secundary;
+            @extend %texto;
             text-align: center;
         }
     }

@@ -1,8 +1,6 @@
 section {
     .contenedor_formulario {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        @include flex(flex, space-evenly, center);
         width: 70%;
         margin: 30px;
         background-color: $color_primary;
@@ -23,9 +21,7 @@ section {
                 }
 
                 p {
-                    font-size: $font_size_small;
-                    color: $color_secundary;
-                    line-height: 1.5;
+                    @extend %texto;
                 }
             }
 
@@ -38,9 +34,8 @@ section {
 
                     label {
                         width: 100%;
-                        font-size: $font_size_small;
-                        color: $color_secundary;
                         margin-bottom: 5px;
+                        @extend %texto;
                     }
 
                     input[type="text"],
@@ -48,7 +43,7 @@ section {
                     textarea {
                         padding: 10px;
                         margin-bottom: 20px;
-                        border: 1px solid $color_terciary;
+                        border: 1px solid $color_accent;
                         border-radius: 5px;
                         font-size: $font_size_small;
                         box-sizing: border-box;
@@ -73,12 +68,10 @@ section {
                         color: white;
                         cursor: pointer;
                         align-self: flex-start;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
+                        @include flex(flex, center, center);
 
                         &:hover {
-                            background-color: $color_terciary;
+                            background-color: $color_accent;
                             color: $color_secundary;
                         }
 

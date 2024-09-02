@@ -1,5 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.biografia div p, section .proyectos p, section .contenedor_formulario div.seccion_texto p, section .contenedor_formulario div.seccion_formulario form label {
+  font-size: 1em;
+  color: #ffffff;
+  line-height: 1.5; }
+
 /*! -------RESET--------*/
 * {
   margin: 0%;
@@ -317,9 +322,7 @@ body {
       line-height: normal;
       padding: 10px 5px 5px 20px; }
     .biografia div p {
-      font-size: 1em;
       font-weight: 400;
-      line-height: normal;
       text-align: justify;
       padding: 2px 20px 20px 20px; }
       .biografia div p span {
@@ -370,9 +373,9 @@ section .contenedor {
       padding: 15px;
       flex-grow: 1;
       display: flex;
-      flex-direction: column;
       justify-content: space-between;
-      text-align: center; }
+      align-items: center;
+      flex-direction: column; }
       section .contenedor .tarjeta .contenido_tarjeta h2 {
         font-size: 1.5em;
         font-weight: 800;
@@ -448,8 +451,6 @@ section .proyectos {
     font-weight: 800;
     color: #0caa95; }
   section .proyectos p {
-    font-size: 1em;
-    color: #ffffff;
     text-align: center; }
 
 section .contenedor_formulario {
@@ -470,10 +471,6 @@ section .contenedor_formulario {
       font-size: 3em;
       font-weight: 800;
       color: #ffffff; }
-    section .contenedor_formulario div.seccion_texto p {
-      font-size: 1em;
-      color: #ffffff;
-      line-height: 1.5; }
   section .contenedor_formulario div.seccion_formulario {
     width: 50%; }
     section .contenedor_formulario div.seccion_formulario form {
@@ -481,8 +478,6 @@ section .contenedor_formulario {
       flex-direction: column; }
       section .contenedor_formulario div.seccion_formulario form label {
         width: 100%;
-        font-size: 1em;
-        color: #ffffff;
         margin-bottom: 5px; }
       section .contenedor_formulario div.seccion_formulario form input[type="text"],
       section .contenedor_formulario div.seccion_formulario form input[type="email"],
@@ -509,8 +504,8 @@ section .contenedor_formulario {
         cursor: pointer;
         align-self: flex-start;
         display: flex;
-        align-items: center;
-        justify-content: center; }
+        justify-content: center;
+        align-items: center; }
         section .contenedor_formulario div.seccion_formulario form button:hover {
           background-color: #0caa95;
           color: #ffffff; }

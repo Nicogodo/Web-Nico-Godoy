@@ -6,9 +6,7 @@
     background-size: cover;
     background-position: left;
     padding: 131px;
-    display: flex;
-    justify-content: right;
-    align-items: center;
+    @include flex(flex, right, center);
 
     h1 {
         width: 800px;
@@ -18,7 +16,7 @@
         font-size: $font_size_extra_large;
         text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.548);
         line-height: 80px;
-        color: $color_secundary;
+        color: nth($colors, 2);
     }
 }
 
@@ -30,7 +28,7 @@
         background-color: $color_primary;
         font-size: 60px;
         font-weight: $font_weight_bold;
-        color: $color_secundary;
+        color: nth($colors, 2);
         padding: 50px;
 
         span {
@@ -44,9 +42,7 @@
         width: 100%;
         background-color: $color_primary;
         padding: 0px 0px 80px 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(flex, center, center);
         flex-wrap: wrap;
 
         div {

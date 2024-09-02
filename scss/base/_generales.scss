@@ -28,7 +28,7 @@ body {
 }
 
 .navbar .navbar-nav .nav-link:hover {
-    color: $color_terciary;
+    color: $color_accent;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -38,7 +38,7 @@ body {
 /** -----------BOTON----------- */
 .btn-primary{
     color: $color_secundary;
-    background-color: $color_terciary;
+    background-color: $color_accent;
     border: none;
     font-size: 20px;
     font-weight: $font_weight_normal;
@@ -84,8 +84,6 @@ body {
 /** -----------FORMULARIO----------- */
 .formulario {
     background-color: $color_primary;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex, center, center);
     height: 100vh;
 }

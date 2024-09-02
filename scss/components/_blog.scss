@@ -5,9 +5,7 @@ section {
         background-color: $color_primary;
         font-size: $font_size_large;
         font-weight: $font_weight_bold;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(flex, center, center);
         text-align: center;
         margin: 0;
         color: #ffffff;
@@ -23,7 +21,7 @@ section {
 
         .tarjeta {
             background-color: $color_secundary;
-            border: 1px solid $color_terciary;
+            border: 1px solid $color_accent;
             border-radius: 5px;
             width: 380px;
             height: 600px;
@@ -48,10 +46,9 @@ section {
                 .contenido_tarjeta {
                     padding: 15px;
                     flex-grow: 1;
-                    display: flex;
+                    @include flex(flex, space-between, center);
                     flex-direction: column;
-                    justify-content: space-between;
-                    text-align: center;
+
 
                     h2 {
                         font-size: 1.5em;
@@ -69,7 +66,7 @@ section {
                         display: block;
                         width: 100%;
                         padding: 10px;
-                        background-color: $color_terciary;
+                        background-color: $color_accent;
                         color: $color_secundary;
                         font-weight: $font_weight_bold;
                         border: none;

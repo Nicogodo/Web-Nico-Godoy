@@ -1,6 +1,7 @@
+//*VARIABLES
 $color_primary: #000000;
 $color_secundary: #ffffff;
-$color_terciary: #0caa95;
+$color_accent: #0caa95;
 $font_size_extra_large: 5em;
 $font_size_large: 3.5em;
 $font_size_medium: 2.5em;
@@ -8,3 +9,24 @@ $font_size_small: 1em;
 $font_weight_bold: 800;
 $font_weight_normal: 400;
 $font_weight_light: 200;
+
+//*LISTAS
+$font-sizes: ($font_size_extra_large, $font_size_large, $font_size_medium, $font_size_small);
+$font-weights: ($font_weight_bold, $font_weight_normal, $font_weight_light);
+$colors: ($color_primary, $color_secundary, $color_accent);
+
+//* EXTENDS
+%texto{
+    font-size: $font_size_small;
+    color: $color_secundary;
+    line-height: 1.5;
+}
+
+//* MIXIN
+$flex: flex; 
+
+@mixin flex($display, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
