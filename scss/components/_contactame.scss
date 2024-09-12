@@ -1,4 +1,7 @@
-section {
+.formulario {
+    background-color: $color_primary;
+    @include flex(flex, center, center);
+    height: 100vh;
     .contenedor_formulario {
         @include flex(flex, space-evenly, center);
         width: 70%;

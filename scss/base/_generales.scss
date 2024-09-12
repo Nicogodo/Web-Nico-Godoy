@@ -56,34 +56,54 @@ body {
 /** -----------CSS CONDICIONES----------- */
 
 /** -----------CARDS----------- */
-.text_bio {
-    left: 44%;
+.background_cards{
+    .cards{
+        .bio{
+            a{
+                .text_bio {
+                    left: 44%;
+                }
+            }
+        } 
+        .blog{
+            a{
+                .text_blog {
+                    left: 41%;
+                }
+            }
+        }
+        .portafolio{
+            a{
+                .text_portafolio {
+                    left: 28%;
+                }
+            }
+        } 
+        .contactame{
+            a{
+                .text_contactame {
+                    left: 25%;
+                }
+            }
+        }
+    }
 }
-.text_blog {
-    left: 41%;
-}
-.text_portafolio {
-    left: 28%;
-}
-.text_contactame {
-    left: 25%;
-}
+
+
 
 /** -----------WHATSAPP BOTON----------- */
-.whatsapp a img {
-    width: 60px;
-    position: fixed;
-    bottom: 50px;
-    right: 20px;
-    transition: transform 0.3s ease-in-out;
-        &:hover {
-            transform: scale(1.3); 
-        }
-}
+.whatsapp {
+    a {
+        img {
+            width: 60px;
+            position: fixed;
+            bottom: 50px;
+            right: 20px;
+            transition: transform 0.3s ease-in-out;
 
-/** -----------FORMULARIO----------- */
-.formulario {
-    background-color: $color_primary;
-    @include flex(flex, center, center);
-    height: 100vh;
+            &:hover {
+                transform: scale(1.3); 
+            }
+        }
+    }
 }

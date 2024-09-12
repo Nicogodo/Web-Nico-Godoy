@@ -12,18 +12,25 @@ footer {
     align-items: center;
     color: $color_secundary;
 
+    h2 {
+        font-size: $font_size_medium;
+        font-weight: 300;
+    }
+
+    div {
+        a {
+            img {
+                margin: 20px;
+                transition: transform 0.5s ease; 
+
+                &:hover {
+                    transform: scale(1.5) rotate(360deg);
+                }
+            }
+        }
+    }
 }
 
-footer h2 {
-    font-size: $font_size_medium;
-    font-weight: 300;
 
-}
 
-footer div a img {
-    margin: 20px;
-    transition: transform 0.5s ease; 
-        &:hover {
-            transform: scale(1.5) rotate(360deg);
-        }     
-}
+

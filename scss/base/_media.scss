@@ -2,175 +2,285 @@
 @media screen and (max-width: 1212px) {
     .hero {
         padding: 100px;
-    }
-
-    .hero h1 {
-        width: 700px;
-        height: 433px;
-        line-height: 70px;
+        h1 {
+            width: 700px;
+            height: 433px;
+            line-height: 70px;
+        }
     }
 }
 
 @media screen and (max-width:1030px) {
-    .biografia div{
+    .biografia{
+        div{
         width: 400px;
+            h1{
+                font-size: $font_size_large;
+                padding: 20px 20px 0px 20px;
+            }
+            h2{
+                font-size: 2em;
+                padding: 0px 5px 5px 20px;
+            } 
+        }
     }
-    .biografia div h1{
-        font-size: $font_size_large;
-        padding: 20px 20px 0px 20px;
-    }
-    .biografia div h2{
-        font-size: 2em;
-        padding: 0px 5px 5px 20px;
+
+    .formulario{
+        .contenedor_formulario {
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+            width: 100%;
+            div{
+                width: 100%;
+                &.seccion_texto{
+                    width: 80%;
+                    h1 {
+                        font-size:3em;
+                        text-align: center;
+                    }
+                    p{
+                        text-align: center;
+                    }
+                }
+                &.seccion_formulario {
+                    width: 80%;
+                }
+            } 
+        }
     } 
+} 
 
-    section .contenedor_formulario {
-        flex-direction: column;
-        align-items: center;
-        margin: 20px;
-        width: 100%;
-    }
-
-    section div.seccion_texto h1 {
-        font-size: 2em;
-    }
-
-    section div.seccion_formulario {
-        width: 100%;
-    }
-}
-
-
+@media screen and (max-width:880px) {
+    section {
+        .titulo_blog{
+            font-size: $font_size_medium;
+        }
+        .contenedor {
+            .tarjeta {
+                width: 300px;
+                height: 510px;
+                img{
+                    height: 160px;
+                }
+                .contenido_tarjeta{
+                    h2 {
+                        font-size: 1.2em;
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                    button {
+                        width: 100%;
+                        font-size: 14px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    } 
+} 
 
 @media screen and (max-width:840px) {
 
     .hero {
         padding: 40px;
-    }
-
-    .hero h1 {
-        width: 450px;
-        height: 433px;
-        font-size: 70px;
-        line-height: 60px;
+        h1 {
+            width: 450px;
+            height: 433px;
+            font-size: 70px;
+            line-height: 60px;
+        }
     }
 
     .yo {
         background-position: left;
         padding: 40px;
+        p {
+            width: 450px;
+        }
     }
-
-    .yo p {
-        width: 450px;
-    }
-}
+} 
 
 @media screen and (max-width:790px) {
-    .biografia img{
-        display: none;
-    } 
+    .biografia {
+        img{
+            display: none;
+        } 
+    }
 }
 
 @media screen and (max-width:766px) {
     .hero {
         padding: 40px;
+        h1 {
+            width: auto;
+            height: 200px;
+            font-size: 70px;
+            line-height: 60px;
+        }
     }
 
-    .hero h1 {
-        width: auto;
-        height: 200px;
-        font-size: 70px;
-        line-height: 60px;
+    .biografia {
+        img{
+            display: none;
+        } 
     }
-    .biografia img{
-        display: none;
+
+    section {
+        .contenedor {
+            .tarjeta {
+                width: 250px;
+                height: 460px;
+                img{
+                    height: 120px;
+                }
+                .contenido_tarjeta{
+                    h2 {
+                        font-size: 1em;
+                    }
+                    p {
+                        font-size: 12px;
+                    }
+                    button {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
     } 
-    section .contenedor_formulario {
-        margin: 20px;
-        width: 100%;
-    }
 
-    section div.seccion_texto h1 {
-        font-size: 2em;
-    }
+    .formulario{
+        .contenedor_formulario {
+            div{
+                width: 100%;
+                &.seccion_texto{
+                    width: 80%;
+                    h1 {
+                        font-size:2.5em;
+                        text-align: center;
+                    }
+                    p{
+                        text-align: center;
+                    }
+                }
+                &.seccion_formulario {
+                    width: 80%;
+                }
+            } 
+        }
+    } 
+} 
 
-    section div.seccion_formulario {
-        width: 100%;
-    }
-}
 
 @media screen and (max-width: 654px) {
 
-    .skills .vision_estrategica h3,
-    .skills .liderazgo_inspirador h3,
-    .skills .pensamiento_disruptivo h3,
-    .skills .storytelling_poderoso h3,
-    .skills .conocimiento_multicanal h3,
-    .skills .inteligencia_emocional h3{
-        font-weight: 500;
-        font-size: 20px;
-    }
+    .skills {
+        .vision_estrategica{
+            h3{
+                font-weight: 500;
+                font-size: 20px;
+            }
+        }
+        .liderazgo_inspirador{
+            h3{
+                font-weight: 500;
+                font-size: 20px;
+            }
+        }
+        .pensamiento_disruptivo{
+            h3{
+                font-weight: 500;
+                font-size: 20px;
+            }
+        }
+        .storytelling_poderoso{
+            h3{
+                font-weight: 500;
+                font-size: 20px;
+            }
+        }
+        .conocimiento_multicanal{
+            h3{
+                font-weight: 500;
+                font-size: 20px;
+            }
+        }
+        .inteligencia_emocional{
+            h3{
+                font-weight: 500;
+                font-size: 20px;
+            }
+        }
+    } 
 }
 
 @media screen and (max-width: 604px) {
     .hero {
         height: calc(100vh - 112px);
+        h1 {
+            font-size: 60px;
+            line-height: 50px;
+        }
     }
 
-    .hero h1 {
-        font-size: 60px;
-        line-height: 50px;
-    }
 
     .yo {
         background-image: url(../img/fondo-cargo-responsive.png);
         background-position: right;
         justify-content: center;
         align-items: left;
+        p {
+            width: 340px;
+            text-align: left;
+            padding: 10px 20px 20px 20px;
+        }
     }
 
-    .yo p {
-        width: 340px;
-        text-align: left;
-        padding: 10px 20px 20px 20px;
-    }
 
-    .whatsapp a img {
-        display: none;
+    .whatsapp{
+        a{
+            img{
+                display: none;
+            }
+        }
     }
 }
 
 @media screen and (max-width: 592px) {
-    .background_cards h2 {
-        font-size: 30px;
-    }
-
-    .background_cards h2 span {
-        font-size: 25px;
-    }
-
-    section .contenedor_formulario {
-        div {
-            &.seccion_formulario {
-                form {
-
-                    label {
-                        display: block; 
-                        width: 100%; 
-                        text-align: center; 
-                        margin-bottom: 10px; 
-                    }
-
-                    input[type="text"],
-                    input[type="email"],
-                    textarea {
-                        width: 100%; 
-                        text-align: center; 
-                    }
-                }
+    .background_cards{
+        h2 {
+            font-size: 30px;
+            span {
+                font-size: 25px;
             }
         }
-    }
+    } 
+
+    .formulario{
+        .contenedor_formulario {
+            div {
+                &.seccion_formulario {
+                    form {
+    
+                        label {
+                            display: block; 
+                            width: 100%; 
+                            text-align: center; 
+                            margin-bottom: 10px; 
+                        }
+    
+                        input[type="text"],
+                        input[type="email"],
+                        textarea {
+                            width: 100%; 
+                            text-align: center; 
+                        }
+                    }
+                }
+            } 
+        }
+    } 
 }
 
 @media screen and (max-width: 508px) {
@@ -188,72 +298,15 @@
             "pensamiento pensamiento"
             "multicanal multicanal"
             "inteligencia inteligencia"
-            "story story"
-        ;
+            "story story";
     }
     
-    section .contenedor_formulario {
-        div {
-            &.seccion_texto {
-                width: 350px; 
-                text-align: center; 
-                margin-bottom: 10px; 
-            }
-        }
-
-        div {
-            &.seccion_formulario {
-                width: 350px; 
-                text-align: center; 
-                margin: 0 auto; 
-        
-                form {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center; 
-        
-                    label {
-                        width: 90%; 
-                        text-align: center; 
-                        margin-bottom: 10px; 
-                    }
-        
-                    input[type="text"],
-                    input[type="email"],
-                    textarea {
-                        width: 90%; 
-                        text-align: center; 
-                        margin-bottom: 15px; 
-                    }
-                }
-            }
-        }
-    }
-
     footer {
         background-image: url(../img/footer-responsive.jpg);
-    }
-
-    footer h2 {
-        font-size: 38px;
-        font-weight: 300;
-    }
-
-    section .contenedor .tarjeta{
-        height: 500px;
-    }
-
-    section .contenedor .tarjeta .contenido_tarjeta h2{
-        font-size: $font_size_small;
-    }
-
-    section .contenedor .tarjeta .contenido_tarjeta p{
-        font-size: 10px;
-    }
-
-    section .contenedor .tarjeta .contenido_tarjeta button{
-        width: 100%;
-        font-size: 12px;
+        h2 {
+            font-size: 38px;
+            font-weight: 300;
+        }
     }
 }
 
@@ -261,67 +314,100 @@
     .hero {
         padding: 3px;
         justify-content: center;
-    }
-
-    .hero h1 {
-        text-align: center;
-        width: 250px;
-        height: 433px;
-        font-size: 45px;
-        line-height: 40px;
+        h1 {
+            text-align: center;
+            width: 250px;
+            height: 433px;
+            font-size: 45px;
+            line-height: 40px;
+        }
     }
 
     .yo {
         justify-content: center;
         align-items: left;
         color: $color_secundary;
+        h2 {
+            width: 250px;
+            padding: 0;
+            font-size: $font_size_large;
+            line-height: 50px;
+            text-align: left;
+        }
+        p {
+            width: 250px;
+            padding: 10px 20px 0px 0px;
+            text-align: left;
+        }
     }
 
-    .yo h2 {
-        width: 250px;
-        padding: 0;
-        font-size: $font_size_large;
-        line-height: 50px;
-        text-align: left;
-    }
 
-    .yo p {
-        width: 250px;
-        padding: 10px 20px 0px 0px;
-        text-align: left;
-    }
-
-    footer h2 {
+    footer {
+        h2 {
         font-size: 28px;
         font-weight: 300;
+        }
     }
 
-    .biografia div{
+    .biografia {
+        div{
         width: 400px;
-    }
-    .biografia div h1{
-        font-size: 40px;
-    }
-    .biografia div h2{
-        font-size: 22px;
-        padding: 0px 5px 5px 20px;
+            h1{
+                font-size: 40px;
+            }
+            h2{
+                font-size: 22px;
+                padding: 0px 5px 5px 20px;
+            } 
+        }
     } 
-} 
-
+}
+ 
 @media screen and (max-width: 340px) {
     .navbar-brand img{
         width: 150px;
     }
 
-    section div h1{
-        font-size: 3em;
-        height: 80px;
-    }
-    section .proyectos .contenedor_proyectos h2{
-        font-size: 1.8em;
+    .formulario{
+        .contenedor_formulario{
+            h1{
+                font-size: 3em;
+                height: 80px;
+            }
+        }
     }
 
-    section .titulo_blog{
-        font-size: $font_size_medium;
+    section{
+        .titulo_portafolio {
+            h1 {
+                font-size: 2em;
+            }
+        } 
+        .proyectos {
+            padding: 0;
+            .contenedor_proyectos{
+                width: 220px;
+                padding: 0;
+            }
+            h2{
+                    font-size: 1.5em;
+                }
+        }
+    }
+
+    .formulario{
+        .contenedor_formulario {
+            div{
+                &.seccion_texto{
+                    h1 {
+                        font-size:1.8em;
+                    }
+                    p{
+                        text-align: center;
+                        font-size: 0.9em;
+                    }
+                }
+            } 
+        }
     } 
 }
